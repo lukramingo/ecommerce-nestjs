@@ -1,0 +1,19 @@
+### create new user signup
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+    "username": "superman",
+    "email": "superman@test.com",
+    "password": "superman123",
+    "status": 1
+}
+
+### login user sigin
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "superman@test.com",
+    "password": "superman123"
+}
