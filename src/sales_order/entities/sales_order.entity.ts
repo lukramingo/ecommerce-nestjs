@@ -14,7 +14,7 @@ export class SalesOrder {
     @Column({default: Math.floor(Math.random()*99999)})
     order_no: number;
 
-    @Column()
+    @Column({default: 'New order'})
     order_status: string;
 
     @OneToMany((type) => SalesOrderItem, sales_order_item => sales_order_item.sales_order)
